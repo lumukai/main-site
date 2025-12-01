@@ -16,10 +16,9 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .container {
