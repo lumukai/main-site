@@ -5,109 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Notice - Lumukai LLC</title>
+    <meta name="description"
+        content="Privacy Notice for Lumukai LLC Android applications and services including PocketDrive, Corre y se va, and Toilet Shush. Learn how we collect, use, and protect your data.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="canonical" href="https://www.lumukai.com/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lumukai LLC">
+    <meta property="og:title" content="Privacy Notice - Lumukai LLC">
+    <meta property="og:description" content="Privacy Notice for Lumukai LLC Android applications and services.">
+    <meta property="og:url" content="https://www.lumukai.com/privacy.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            overflow-y: auto;
-        }
-
-        .legal-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px 80px 20px;
-            position: relative;
-            z-index: 1;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            min-height: 100vh;
-        }
-
-        h1 {
-            font-family: 'Cinzel', serif;
-            margin-bottom: 30px;
-            color: var(--accent-color);
-            text-align: center;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        h2 {
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #ffffff;
-            font-weight: 600;
-        }
-
-        p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-            color: #f0f0f0;
-        }
-
-        ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            color: #f0f0f0;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        .back-link {
-            display: block;
-            margin-bottom: 30px;
-            color: var(--accent-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(212, 175, 55, 0.3);
-            text-align: center;
-        }
-
-        .footer-nav {
-            margin-bottom: 15px;
-        }
-
-        .footer-nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .footer-nav a:hover {
-            color: var(--accent-color);
-        }
-
-        .footer-copyright {
-            color: #888;
-            font-size: 0.85rem;
-            margin-top: 10px;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="legal-container">
+    <div class="legal-page">
         <a href="index.html" class="back-link" data-i18n="back_home">&larr; Back to Home</a>
 
-        <h1 data-i18n="privacy_title">Privacy Notice</h1>
-        <p data-i18n="privacy_last_updated">Last updated: December 1, 2025</p>
+        <h1 class="legal-title" data-i18n="privacy_title">Privacy Notice</h1>
+        <p class="legal-updated" data-i18n="privacy_last_updated">Last updated: December 1, 2025</p>
 
         <h2 data-i18n="privacy_intro_title">1. Introduction</h2>
         <p data-i18n="privacy_intro_text">Lumukai LLC ("we," "our," or "us") respects your privacy and is committed to
@@ -181,18 +104,21 @@
 
         <h2 data-i18n="privacy_contact_title">9. Contact Us</h2>
         <p data-i18n="privacy_contact_text">If you have any questions about this Privacy Notice, please contact us by email at info@lumukai.com.</p>
-
-        <footer class="footer">
-            <nav class="footer-nav">
-                <a href="/" data-i18n="footer_home">Home</a>
-                <span class="separator">|</span>
-                <a href="terms.html" data-i18n="terms_link">Terms and Conditions</a>
-                <span class="separator">|</span>
-                <a href="privacy.html" data-i18n="privacy_link">Privacy Notice</a>
-            </nav>
-            <p class="footer-copyright" data-i18n="footer_copyright">© <span id="current-year"></span> Lumukai LLC. All rights reserved.</p>
-        </footer>
     </div>
+
+    <footer class="footer">
+        <div class="legal-container">
+            <a href="index.html">Home</a>
+            <span class="separator">|</span>
+            <a href="terms.html" data-i18n="terms_link">Terms and Conditions</a>
+            <span class="separator">|</span>
+            <a href="privacy.html" data-i18n="privacy_link">Privacy Notice</a>
+        </div>
+        <div class="copyright-info">
+            <span>© 2025–<span id="current-year"></span> Lumukai LLC. All rights reserved.</span>
+        </div>
+    </footer>
+
     <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>

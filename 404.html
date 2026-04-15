@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Page Not Found - Lumukai LLC</title>
+    <meta name="description" content="The page you are looking for could not be found.">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="legal-page" style="text-align: center; padding-top: 100px;">
+        <h1 class="legal-title">Page Not Found</h1>
+        <p style="color: #999; font-size: 1.1rem; margin: 30px 0;">The page you're looking for doesn't exist or has been
+            moved.</p>
+        <a href="/" class="cta-button" style="margin-top: 20px;">Back to Home</a>
+    </div>
+
+    <footer class="footer">
+        <div class="legal-container">
+            <a href="/">Home</a>
+            <span class="separator">|</span>
+            <a href="terms.html">Terms and Conditions</a>
+            <span class="separator">|</span>
+            <a href="privacy.html">Privacy Notice</a>
+        </div>
+        <div class="copyright-info">
+            <span>© 2025–<span id="current-year"></span> Lumukai LLC. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

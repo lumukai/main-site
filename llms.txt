@@ -1,0 +1,35 @@
+# Lumukai LLC
+
+> Lumukai LLC is a technology company that builds quality digital products, from mobile apps to content and beyond.
+
+## About
+
+Lumukai LLC creates practical, polished digital products. We currently develop Android mobile applications available on Google Play, with plans to expand into content creation and online retail.
+
+## Apps
+
+### PocketDrive: WiFi File Share
+- **Platform:** Android
+- **Category:** Utilities
+- **Price:** Free
+- **Google Play:** https://play.google.com/store/apps/details?id=com.lumukai.pocketdrive
+- **Description:** Fast, secure local file sharing between your devices over WiFi without internet. Transfer photos, videos, documents, and any file type directly between Android phones, tablets, and computers on the same network. No cloud uploads, no file size limits, no account required.
+
+### Corre y se va
+- **Platform:** Android
+- **Category:** Games
+- **Price:** Free
+- **Google Play:** https://play.google.com/store/apps/details?id=com.lumukai.correyseva
+- **Description:** The classic Mexican loteria caller experience with automated card dealing, authentic voice calls, and traditional artwork. Play loteria with family and friends without needing a physical deck or a dedicated caller.
+
+### Toilet Shush
+- **Platform:** Android
+- **Category:** Utilities
+- **Price:** Free
+- **Google Play:** https://play.google.com/store/apps/details?id=com.lumukai.toiletshush
+- **Description:** Privacy sound generator for peace of mind in public or shared restrooms. Plays ambient white noise and water sounds to mask bathroom noises discreetly. Simple one-tap operation with automatic stop timer.
+
+## Contact
+
+- **Email:** info@lumukai.com
+- **Website:** https://www.lumukai.com

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Language Toggle Logic ---
+    // Language Toggle Logic
     const currentLang = localStorage.getItem('lumukai_lang') || 'en';
 
     // Create Switcher Container
@@ -30,15 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     switcher.appendChild(btnEn);
     switcher.appendChild(btnEs);
 
-    // Append to .legal-container if it exists (so it scrolls with content), otherwise body
-    const legalContainer = document.querySelector('.legal-container');
-    if (legalContainer) {
-        legalContainer.appendChild(switcher);
-        // Ensure container has relative positioning (it does in CSS, but good to be safe if we rely on it)
-        // legalContainer.style.position = 'relative'; 
-    } else {
-        document.body.appendChild(switcher);
-    }
+    // Always append to body (position: fixed in CSS)
+    document.body.appendChild(switcher);
 
     function updateLanguage(lang) {
         const elements = document.querySelectorAll('[data-i18n]');
@@ -51,6 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 translatedText = translatedText.replace(/{year}/g, currentYear);
                 // Use innerHTML to preserve formatting like <strong>
                 el.innerHTML = translatedText;
+            }
+        });
+
+        // Handle data-i18n-html elements (feature lists with HTML content)
+        const htmlElements = document.querySelectorAll('[data-i18n-html]');
+        htmlElements.forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (translations[lang] && translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
             }
         });
     }
@@ -67,15 +69,86 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLanguage(currentLang);
     updateCopyrightYear();
 
+    // Screenshot Lightbox
+    const carousels = document.querySelectorAll('.screenshot-carousel');
+    if (carousels.length === 0) return; // No carousels on this page (legal pages)
 
-    // --- Existing Mouse Movement Effect (Only for Index) ---
-    const welcomeText = document.querySelector('.welcome-text');
-    if (welcomeText) {
-        document.addEventListener('mousemove', (e) => {
-            const x = (window.innerWidth - e.pageX * 2) / 100;
-            const y = (window.innerHeight - e.pageY * 2) / 100;
+    // Build lightbox DOM
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML = `
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+        <img class="lightbox-img" src="" alt="Screenshot preview">
+        <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+        <div class="lightbox-counter"></div>
+    `;
+    document.body.appendChild(overlay);
 
-            welcomeText.style.transform = `translate(${x}px, ${y}px)`;
-        });
+    const lightboxImg = overlay.querySelector('.lightbox-img');
+    const lightboxCounter = overlay.querySelector('.lightbox-counter');
+    const btnClose = overlay.querySelector('.lightbox-close');
+    const btnPrev = overlay.querySelector('.lightbox-prev');
+    const btnNext = overlay.querySelector('.lightbox-next');
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    function openLightbox(images, index) {
+        currentImages = images;
+        currentIndex = index;
+        showImage();
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
     }
+
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function showImage() {
+        lightboxImg.src = currentImages[currentIndex];
+        lightboxCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        showImage();
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        showImage();
+    }
+
+    // Attach click handlers to each screenshot
+    carousels.forEach(carousel => {
+        const imgs = carousel.querySelectorAll('img');
+        imgs.forEach((img, idx) => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                const srcs = Array.from(imgs).map(i => i.src);
+                openLightbox(srcs, idx);
+            });
+        });
+    });
+
+    // Lightbox controls
+    btnClose.addEventListener('click', closeLightbox);
+    btnNext.addEventListener('click', nextImage);
+    btnPrev.addEventListener('click', prevImage);
+
+    // Close on clicking the dark backdrop (not the image or buttons)
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeLightbox();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!overlay.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+    });
 });
