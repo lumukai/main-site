@@ -498,6 +498,16 @@ body::before {
     text-align: center;
 }
 
+.legal-brand {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
 .legal-updated {
     text-align: center;
     color: #666;
