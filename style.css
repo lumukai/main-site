@@ -868,6 +868,38 @@ body::before {
     color: #888;
 }
 
+.contact-card-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.contact-card-link:hover {
+    opacity: 0.7;
+}
+
+/* Contact Page Specific Layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+}
+
+.full-width-card {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /*  Screenshots Section (landing page variant)  */
 .screenshots-section {
     max-width: 960px;
