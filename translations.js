@@ -4,6 +4,7 @@ const translations = {
         "hero_tagline": "Crafting apps",
         "our_apps": "Our Apps",
         "follow_us": "Follow Us",
+        "listen_on": "Listen On",
         "our_videos": "Our Videos",
         "videos_desc": "Explore our latest video content, featuring animation, music, storytelling, and lifestyle content.",
         "video_1_title": "Heartbeat Highlight",
