@@ -440,15 +440,35 @@ body::before {
     fill: currentColor;
 }
 
-.social-section {
+.social-music-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1000px;
     width: 100%;
-    padding: 20px 24px 40px;
-    text-align: center;
+    margin: 0 auto;
+    padding: 20px 24px 60px;
+    flex-wrap: wrap;
     z-index: 1;
 }
 
-.social-section .section-title {
+.social-section,
+.music-section {
+    flex: 0 1 auto;
+    text-align: center;
+}
+
+.social-section .section-title,
+.music-section .section-title {
     margin-bottom: 25px;
+    font-size: 1.4rem; /* Slightly smaller to fit side-by-side better */
+}
+
+@media (max-width: 768px) {
+    .social-music-container {
+        gap: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .legal-container {

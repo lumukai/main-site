@@ -198,6 +198,7 @@ const translations = {
         "hero_tagline": "Creando apps",
         "our_apps": "Nuestras Apps",
         "follow_us": "Síguenos",
+        "listen_on": "Escúchanos en",
         "our_videos": "Nuestros Videos",
         "videos_desc": "Explora nuestro contenido de video más reciente, que incluye animación, música, historias y contenido de estilo de vida.",
         "video_1_title": "Heartbeat Highlight",
