@@ -405,6 +405,52 @@ body::before {
     opacity: 1;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    color: #888;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.social-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.social-section {
+    width: 100%;
+    padding: 20px 24px 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.social-section .section-title {
+    margin-bottom: 25px;
+}
+
 .legal-container {
     margin-bottom: 10px;
 }
