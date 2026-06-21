@@ -31,6 +31,7 @@ const translations = {
         "screenshots_title": "Screenshots",
         "faq_title": "Frequently Asked Questions",
         "contact_link": "Contact",
+        "nav_music": "Music",
         "contact_title": "Contact Us",
         "contact_business_info": "Business Information",
         "contact_address_label": "Address",
@@ -192,7 +193,10 @@ const translations = {
         "terms_changes_title": "13. Changes to These Terms",
         "terms_changes_text": "We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.",
         "terms_contact_title": "14. Contact Us",
-        "terms_contact_text": "If you have any questions about these Terms, please contact us by email at info@lumukai.com."
+        "terms_contact_text": "If you have any questions about these Terms, please contact us by email at info@lumukai.com.",
+        "music_subtitle": "Connect with us on your favorite streaming platforms",
+        "music_btn_listen": "Listen",
+        "music_btn_watch": "Watch"
     },
     "es": {
         "welcome": "Lumukai",
@@ -226,6 +230,7 @@ const translations = {
         "screenshots_title": "Capturas de pantalla",
         "faq_title": "Preguntas Frecuentes",
         "contact_link": "Contacto",
+        "nav_music": "Música",
         "contact_title": "Contáctenos",
         "contact_business_info": "Información de la Empresa",
         "contact_address_label": "Dirección",
@@ -386,6 +391,9 @@ const translations = {
         "terms_changes_title": "13. Cambios a Estos Términos",
         "terms_changes_text": "Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Si una revisión es material, haremos esfuerzos razonables para proporcionar un aviso de al menos 30 días antes de que entren en vigencia los nuevos términos. Lo que constituye un cambio material se determinará a nuestra sola discreción.",
         "terms_contact_title": "14. Contáctenos",
-        "terms_contact_text": "Si tiene alguna pregunta sobre estos Términos, contáctenos por correo electrónico a info@lumukai.com."
+        "terms_contact_text": "Si tiene alguna pregunta sobre estos Términos, contáctenos por correo electrónico a info@lumukai.com.",
+        "music_subtitle": "Conéctate con nosotros en tus plataformas de streaming favoritas",
+        "music_btn_listen": "Escuchar",
+        "music_btn_watch": "Ver"
     }
 };
