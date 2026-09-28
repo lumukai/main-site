@@ -169,7 +169,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -183,7 +183,8 @@
         <a href="correyseva.html">Corre y se va</a>
         <a href="toiletshush.html">Toilet Shush</a>
         <a href="music/" data-i18n="nav_music">Music</a>
-        <a href="#videos" data-i18n="our_videos">Our Videos</a>
+        <a href="#channels" data-i18n="nav_channels">Channels</a>
+        <a href="#videos" data-i18n="nav_videos">Videos</a>
         <a href="contact.html" data-i18n="contact_link">Contact</a>
     </nav>
 
@@ -203,7 +204,14 @@
                 <h2 class="section-title" data-i18n="follow_us">Follow Us</h2>
                 <div class="social-links">
                     <a href="https://www.youtube.com/@lumukaiofficial" class="social-icon" target="_blank"
-                        rel="noopener noreferrer" aria-label="YouTube">
+                        rel="noopener noreferrer" aria-label="YouTube (@lumukaiofficial)" title="Lumukai (@lumukaiofficial)">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@lumukaiproject" class="social-icon yt-project" target="_blank"
+                        rel="noopener noreferrer" aria-label="YouTube (@lumukaiproject)" title="Lumukai Project (@lumukaiproject)">
                         <svg viewBox="0 0 24 24">
                             <path
                                 d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -434,104 +442,556 @@
             </article>
         </section>
 
+                <!-- Channels Section -->
+        <section id="channels" class="channels-section">
+            <div class="section-header">
+                <span class="section-eyebrow" data-i18n="channels_eyebrow">Creative Universes</span>
+                <h2 class="section-title" data-i18n="our_channels">Our YouTube Channels</h2>
+                <p class="section-desc" data-i18n="channels_desc">Explore our two distinct creative destinations on YouTube, each dedicated to original animation, storytelling, and music.</p>
+            </div>
+
+            <div class="channels-grid">
+                <!-- Lumukai Project Card -->
+                <article class="channel-card channel-project">
+                    <div class="channel-card-aura"></div>
+                    <div class="channel-header">
+                        <div class="channel-avatar-wrapper">
+                            <img src="images/lumukaiproject-avatar.jpg" alt="Lumukai Project YouTube Channel" class="channel-avatar" width="80" height="80">
+                            <span class="channel-live-dot" title="Active Channel"></span>
+                        </div>
+                        <div class="channel-titles">
+                            <span class="channel-badge project-badge" data-i18n="channel_project_badge">Anime & Music Productions</span>
+                            <h3 class="channel-name" data-i18n="channel_project_title">Lumukai Project</h3>
+                            <a href="https://www.youtube.com/@lumukaiproject" target="_blank" rel="noopener noreferrer" class="channel-handle">@lumukaiproject</a>
+                        </div>
+                    </div>
+                    <div class="channel-body">
+                        <p class="channel-cast" data-i18n="channel_project_cast">Starring Monika「モニカ」& Rebekka「レベッカ」</p>
+                        <p class="channel-desc" data-i18n="channel_project_desc">High-energy Japanese pop productions, official anime music videos, and dynamic character shorts crafted with vibrant motion and rhythm.</p>
+                        <div class="channel-tags">
+                            <span data-i18n="channel_project_tag1">Original Anime MVs</span>
+                            <span data-i18n="channel_project_tag2">J-Pop Productions</span>
+                            <span data-i18n="channel_project_tag3">Character Shorts</span>
+                        </div>
+                    </div>
+                    <div class="channel-actions">
+                        <a href="https://www.youtube.com/@lumukaiproject" target="_blank" rel="noopener noreferrer" class="btn-channel-explore">
+                            <span data-i18n="visit_channel_btn">Visit Channel</span>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@lumukaiproject?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn-channel-sub">
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <span data-i18n="subscribe_btn">Subscribe</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Lumukai Card -->
+                <article class="channel-card channel-official">
+                    <div class="channel-card-aura"></div>
+                    <div class="channel-header">
+                        <div class="channel-avatar-wrapper">
+                            <img src="images/lumukaiofficial-avatar.jpg" alt="Lumukai YouTube Channel" class="channel-avatar" width="80" height="80">
+                            <span class="channel-live-dot" title="Active Channel"></span>
+                        </div>
+                        <div class="channel-titles">
+                            <span class="channel-badge official-badge" data-i18n="channel_official_badge">Animation & Comedy</span>
+                            <h3 class="channel-name" data-i18n="channel_official_title">Lumukai</h3>
+                            <a href="https://www.youtube.com/@lumukaiofficial" target="_blank" rel="noopener noreferrer" class="channel-handle">@lumukaiofficial</a>
+                        </div>
+                    </div>
+                    <div class="channel-body">
+                        <p class="channel-cast" data-i18n="channel_official_cast">Starring Mia & Leo</p>
+                        <p class="channel-desc" data-i18n="channel_official_desc">Lighthearted animated comedy, relatable couple slice-of-life sketches, creative stories, and playful shorts.</p>
+                        <div class="channel-tags">
+                            <span data-i18n="channel_official_tag1">Mia & Leo Series</span>
+                            <span data-i18n="channel_official_tag2">Comedy & Memes</span>
+                            <span data-i18n="channel_official_tag3">App Showcases</span>
+                        </div>
+                    </div>
+                    <div class="channel-actions">
+                        <a href="https://www.youtube.com/@lumukaiofficial" target="_blank" rel="noopener noreferrer" class="btn-channel-explore">
+                            <span data-i18n="visit_channel_btn">Visit Channel</span>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@lumukaiofficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn-channel-sub">
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <span data-i18n="subscribe_btn">Subscribe</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <!-- Videos Section -->
         <section id="videos" class="video-showcase">
-            <h2 class="section-title" data-i18n="our_videos">Our Videos</h2>
-            <p class="section-desc" data-i18n="videos_desc">Explore our latest video content, featuring music,
-                storytelling, and lifestyle content.</p>
+            <div class="section-header">
+                <span class="section-eyebrow" data-i18n="videos_eyebrow">Original Productions</span>
+                <h2 class="section-title" data-i18n="our_videos">Our Videos</h2>
+                <p class="section-desc" data-i18n="videos_desc">Explore all videos and shorts from our two YouTube channels, Lumukai Project and Lumukai.</p>
+            </div>
 
-            <div class="video-grid">
-                <article class="video-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/Y88fUdkDZOo?rel=0"
-                            title="Heartbeat Highlight Official Music Video" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-                        </iframe>
+            <!-- Filter Pills (3 clean channel filters) -->
+            <div class="video-filters" role="tablist" aria-label="Video Filter Tabs">
+                <button class="filter-pill active" data-filter="all" data-i18n="filter_all">All Videos</button>
+                <button class="filter-pill" data-filter="project" data-i18n="filter_project">Lumukai Project</button>
+                <button class="filter-pill" data-filter="lumukai" data-i18n="filter_lumukai">Lumukai</button>
+            </div>
+
+            <!-- Featured Premiere Hero Card -->
+            <article class="video-spotlight-card" data-channel="project">
+                <div class="spotlight-media">
+                    <div class="video-facade" data-video-id="nwfE1uj9O7s" data-title="Shakaraki Sweep! Official Music Video">
+                        <img src="https://i.ytimg.com/vi/nwfE1uj9O7s/maxresdefault.jpg" alt="Shakaraki Sweep! Official Music Video by Lumukai" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Shakaraki Sweep!">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                        </button>
+                        <div class="facade-overlay"></div>
+                        <span class="facade-tag" data-i18n="featured_premiere">Featured Premiere</span>
+                    </div>
+                </div>
+                <div class="spotlight-content">
+                    <div class="spotlight-meta">
+                        <span class="video-channel-tag project">Lumukai Project</span>
+                        <span class="video-type-pill" data-i18n="music_video_badge">Official Music Video</span>
+                    </div>
+                    <h3 class="spotlight-title" data-i18n="video_sweep_title">Shakaraki Sweep!「シャカリキ・スイープ」</h3>
+                    <p class="spotlight-desc" data-i18n="video_sweep_desc">Original anime music video featuring Monika and Rebekka by Lumukai</p>
+                    <div class="spotlight-actions">
+                        <a href="https://www.youtube.com/watch?v=nwfE1uj9O7s" target="_blank" rel="noopener noreferrer" class="btn-yt-direct">
+                            <span data-i18n="watch_on_youtube">Watch on YouTube ↗</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Featured Videos (16:9 Widescreen) -->
+            <h3 class="subsection-title" data-i18n="featured_videos_heading">Featured Videos</h3>
+            <div class="video-grid" id="main-video-grid">
+                <!-- Step by Step (Project) -->
+                <article class="video-card" data-channel="project">
+                    <div class="video-facade" data-video-id="hjafmsnKD24" data-title="Step by Step Official Music Video">
+                        <img src="https://i.ytimg.com/vi/hjafmsnKD24/maxresdefault.jpg" alt="Step by Step Official Music Video" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Step by Step"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
                     </div>
                     <div class="video-info">
-                        <span class="video-badge" data-i18n="official_video">Official Lumukai Production</span>
-                        <h3 class="video-title" data-i18n="video_1_title">Heartbeat Highlight</h3>
-                        <p class="video-desc" data-i18n="video_1_desc">Official music video produced by Lumukai LLC.</p>
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                            <span class="video-type-pill" data-i18n="music_video_badge">Official Music Video</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="video_step_title">Step by Step 「ステップ・バイ・ステップ」</h4>
+                        <p class="video-desc" data-i18n="video_step_desc">Official anime music video for 'Step by Step' starring Monika by Lumukai.</p>
+                        <a href="https://www.youtube.com/watch?v=hjafmsnKD24" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
                     </div>
                 </article>
 
-                <article class="video-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/r-MMGlt_Iog?rel=0"
-                            title="Meet the Parents | Toilet Shush App by Lumukai" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-                        </iframe>
+                <!-- Heartbeat Highlight (Project) -->
+                <article class="video-card" data-channel="project">
+                    <div class="video-facade" data-video-id="iDcC3_2BHS4" data-title="Heartbeat Highlight Official Music Video">
+                        <img src="https://i.ytimg.com/vi/iDcC3_2BHS4/maxresdefault.jpg" alt="Heartbeat Highlight Official Music Video" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Heartbeat Highlight"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
                     </div>
                     <div class="video-info">
-                        <span class="video-badge" data-i18n="official_video">Official Lumukai Production</span>
-                        <h3 class="video-title" data-i18n="video_2_title">Meet the Parents</h3>
-                        <p class="video-desc" data-i18n="video_2_desc">Toilet Shush app promotional video by Lumukai.
-                        </p>
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                            <span class="video-type-pill" data-i18n="music_video_badge">Official Music Video</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="video_heartbeat_title">Heartbeat Highlight 「鼓動ハイライト」</h4>
+                        <p class="video-desc" data-i18n="video_heartbeat_desc">Original energetic anime music video production by Lumukai.</p>
+                        <a href="https://www.youtube.com/watch?v=iDcC3_2BHS4" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
                     </div>
                 </article>
 
-                <article class="video-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/UWvwNxSuwW4?rel=0"
-                            title="Step by Step Official Music Video" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-                        </iframe>
+                <!-- There's No Otter Like You! (Lumukai) -->
+                <article class="video-card" data-channel="lumukai">
+                    <div class="video-facade" data-video-id="dfkpPZeopLY" data-title="There's No Otter Like You!">
+                        <img src="https://i.ytimg.com/vi/dfkpPZeopLY/maxresdefault.jpg" alt="There's No Otter Like You! Music Video" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play There's No Otter Like You!"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
                     </div>
                     <div class="video-info">
-                        <span class="video-badge" data-i18n="official_video">Official Lumukai Production</span>
-                        <h3 class="video-title" data-i18n="video_3_title">Step by Step</h3>
-                        <p class="video-desc" data-i18n="video_3_desc">Official music video for "Step by Step" by Lumukai.</p>
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                            <span class="video-type-pill" data-i18n="song_anim_badge">Song & Animation</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="video_otter_title">There's No Otter Like You! 🎶❤️</h4>
+                        <p class="video-desc" data-i18n="video_otter_desc">Original animated song and music video production by Lumukai.</p>
+                        <a href="https://www.youtube.com/watch?v=dfkpPZeopLY" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
                     </div>
                 </article>
 
-                <article class="video-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/dfkpPZeopLY?rel=0"
-                            title="There's No Otter Like You! Official Music Video" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-                        </iframe>
+                <!-- Meet the Parents | Toilet Shush App (Lumukai) -->
+                <article class="video-card" data-channel="lumukai">
+                    <div class="video-facade" data-video-id="r-MMGlt_Iog" data-title="Meet the Parents | Toilet Shush App">
+                        <img src="https://i.ytimg.com/vi/r-MMGlt_Iog/maxresdefault.jpg" alt="Meet the Parents - Toilet Shush App Video" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Meet the Parents"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
                     </div>
                     <div class="video-info">
-                        <span class="video-badge" data-i18n="official_video">Official Lumukai Production</span>
-                        <h3 class="video-title" data-i18n="video_4_title">There's No Otter Like You!</h3>
-                        <p class="video-desc" data-i18n="video_4_desc">Official music video for "There's No Otter Like You!" by Lumukai.</p>
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                            <span class="video-type-pill" data-i18n="app_story_badge">App Story</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="video_parents_title">Meet the Parents | Toilet Shush App</h4>
+                        <p class="video-desc" data-i18n="video_parents_desc">Playful animated comedy sketch for the Toilet Shush privacy app by Lumukai.</p>
+                        <a href="https://www.youtube.com/watch?v=r-MMGlt_Iog" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- When Childhood Training Pays Off (Lumukai) -->
+                <article class="video-card" data-channel="lumukai">
+                    <div class="video-facade" data-video-id="yghJfPba2sM" data-title="When Childhood Training Pays Off">
+                        <img src="https://i.ytimg.com/vi/yghJfPba2sM/hqdefault.jpg" alt="When Childhood Training Pays Off" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play When Childhood Training Pays Off"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="video_training_payoff_title">When Childhood Training Pays Off 😆</h4>
+                        <p class="video-desc" data-i18n="video_training_payoff_desc">Humorous couple animation sketch starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/watch?v=yghJfPba2sM" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- When the Baby Sleeps (Lumukai) -->
+                <article class="video-card" data-channel="lumukai">
+                    <div class="video-facade" data-video-id="Y3aKqsFshYE" data-title="When the Baby Sleeps">
+                        <img src="https://i.ytimg.com/vi/Y3aKqsFshYE/hqdefault.jpg" alt="When the Baby Sleeps" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play When the Baby Sleeps"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="video_baby_sleeps_title">When the Baby Sleeps 👶🏻</h4>
+                        <p class="video-desc" data-i18n="video_baby_sleeps_desc">Relatable parenting animation short starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/watch?v=Y3aKqsFshYE" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
                     </div>
                 </article>
             </div>
 
-            <h3 class="subsection-title" data-i18n="youtube_shorts">YouTube Shorts</h3>
-            <div class="shorts-grid">
-                <article class="short-card">
-                    <div class="short-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/xLKhxx9hKUE"
-                            title="Meet Rebekka Shorts" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-                        </iframe>
+            <!-- YouTube Shorts Section (9:16) -->
+            <h3 class="subsection-title" data-i18n="shorts_videos_heading">Shorts & Clips</h3>
+            <div class="shorts-grid" id="shorts-video-grid">
+                <!-- Meet Monika & Rebekka (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="CM39AkVeklQ" data-title="Meet Monika and Rebekka">
+                        <img src="https://i.ytimg.com/vi/CM39AkVeklQ/hqdefault.jpg" alt="Meet Monika and Rebekka" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
                     </div>
                     <div class="video-info">
-                        <span class="video-badge" data-i18n="official_video">Official Lumukai Production</span>
-                        <h3 class="video-title" data-i18n="short_1_title">Meet Rebekka</h3>
-                        <p class="video-desc" data-i18n="short_1_desc">Meet Rebekka in this YouTube Short.</p>
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_monika_rebekka_title">Meet Monika & Rebekka 🤗</h4>
+                        <p class="video-desc" data-i18n="short_monika_rebekka_desc">Introducing Monika and Rebekka in this anime animation by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/CM39AkVeklQ" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
                     </div>
                 </article>
 
-                <article class="short-card">
-                    <div class="short-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/Y7tj322KGLE"
-                            title="Meet Monika Shorts" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-                        </iframe>
+                <!-- Meet Rebekka Solo (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="VAgpqmNuw4o" data-title="Meet Rebekka「レベッカ」">
+                        <img src="https://i.ytimg.com/vi/VAgpqmNuw4o/hqdefault.jpg" alt="Meet Rebekka" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
                     </div>
                     <div class="video-info">
-                        <span class="video-badge" data-i18n="official_video">Official Lumukai Production</span>
-                        <h3 class="video-title" data-i18n="short_2_title">Meet Monika</h3>
-                        <p class="video-desc" data-i18n="short_2_desc">Meet Monika in this YouTube Short.</p>
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_rebekka_solo_title">Meet Rebekka「レベッカ」🤗</h4>
+                        <p class="video-desc" data-i18n="short_rebekka_solo_desc">Get to know Rebekka in this character animation by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/VAgpqmNuw4o" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Meet Monika Solo (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="axx6nelfCHM" data-title="Meet Monika「モニカ」">
+                        <img src="https://i.ytimg.com/vi/axx6nelfCHM/hqdefault.jpg" alt="Meet Monika" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_monika_solo_title">Meet Monika「モニカ」🤗</h4>
+                        <p class="video-desc" data-i18n="short_monika_solo_desc">Get to know Monika in this character animation by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/axx6nelfCHM" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Cats Being Cats (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="Cnr1qYBoxuc" data-title="kLiPs | Cats Being Cats">
+                        <img src="https://i.ytimg.com/vi/Cnr1qYBoxuc/hqdefault.jpg" alt="Cats Being Cats" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_cats_title">kLiPs | Cats Being Cats 😇🐈‍⬛</h4>
+                        <p class="video-desc" data-i18n="short_cats_desc">Playful anime comedy clip featuring mischievous cats by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/Cnr1qYBoxuc" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Dusk Maidens (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="or4cXl6-vZY" data-title="Dusk Maidens">
+                        <img src="https://i.ytimg.com/vi/or4cXl6-vZY/hqdefault.jpg" alt="Dusk Maidens" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_dusk_title">Dusk Maidens 🖤</h4>
+                        <p class="video-desc" data-i18n="short_dusk_desc">Dark fantasy and soulslike-inspired anime short by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/or4cXl6-vZY" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Training with Rebekka 3 (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="lGMJxGiwaTw" data-title="Training with Rebekka 3">
+                        <img src="https://i.ytimg.com/vi/lGMJxGiwaTw/hqdefault.jpg" alt="Training with Rebekka 3" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_training3_title">Training with Rebekka 3 🏋️‍♀️</h4>
+                        <p class="video-desc" data-i18n="short_training3_desc">High-energy anime workout motivation short by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/lGMJxGiwaTw" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Training with Rebekka 2 (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="G7uQlmWK2B8" data-title="Training with Rebekka 2">
+                        <img src="https://i.ytimg.com/vi/G7uQlmWK2B8/hqdefault.jpg" alt="Training with Rebekka 2" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_training2_title">Training with Rebekka 2 💪</h4>
+                        <p class="video-desc" data-i18n="short_training2_desc">Fitness motivation animation short starring Rebekka by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/G7uQlmWK2B8" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Training with Rebekka 1 (Project) -->
+                <article class="short-card" data-channel="project">
+                    <div class="short-facade" data-video-id="0jks2N49H9o" data-title="Training with Rebekka 1">
+                        <img src="https://i.ytimg.com/vi/0jks2N49H9o/hqdefault.jpg" alt="Training with Rebekka 1" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag project">Lumukai Project</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_training1_title">Training with Rebekka 1 ✨</h4>
+                        <p class="video-desc" data-i18n="short_training1_desc">Original fitness routine animation short by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/0jks2N49H9o" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- We Have an Announcement… (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="ENy-vVR09RY" data-title="We Have an Announcement…">
+                        <img src="https://i.ytimg.com/vi/ENy-vVR09RY/hqdefault.jpg" alt="We Have an Announcement…" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_announcement_title">We Have an Announcement… 📢</h4>
+                        <p class="video-desc" data-i18n="short_announcement_desc">Special announcement short from Life with Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/ENy-vVR09RY" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- #1 When Your Wife Is Latina (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="v51q0yJ-NdQ" data-title="#1 When Your Wife Is Latina">
+                        <img src="https://i.ytimg.com/vi/v51q0yJ-NdQ/hqdefault.jpg" alt="#1 When Your Wife Is Latina" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_latina_wife_title">#1 When Your Wife Is Latina ☺️</h4>
+                        <p class="video-desc" data-i18n="short_latina_wife_desc">Life with Mia & Leo couple comedy short by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/v51q0yJ-NdQ" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- When the Chancla Comes Out! (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="Q5FunttI_Zs" data-title="When the Chancla Comes Out!">
+                        <img src="https://i.ytimg.com/vi/Q5FunttI_Zs/hqdefault.jpg" alt="When the Chancla Comes Out!" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_chancla_title">When the Chancla Comes Out! 🩴</h4>
+                        <p class="video-desc" data-i18n="short_chancla_desc">Hilarious slice-of-life couple humor by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/Q5FunttI_Zs" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- She Said... It's Not Spicy! (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="SY8pJzbtAXg" data-title="She Said... It's Not Spicy!">
+                        <img src="https://i.ytimg.com/vi/SY8pJzbtAXg/hqdefault.jpg" alt="She Said... It's Not Spicy!" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_spicy_title">She Said... It's Not Spicy! 🌶️</h4>
+                        <p class="video-desc" data-i18n="short_spicy_desc">Relatable couple dinner moments starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/SY8pJzbtAXg" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- She Left Him NOTHING! (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="WJTvZpoU5mk" data-title="She Left Him NOTHING!">
+                        <img src="https://i.ytimg.com/vi/WJTvZpoU5mk/hqdefault.jpg" alt="She Left Him NOTHING!" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_left_nothing_title">She Left Him NOTHING! 😅</h4>
+                        <p class="video-desc" data-i18n="short_left_nothing_desc">Comedy sketch starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/WJTvZpoU5mk" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Don't Look! (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="Iba133nFobA" data-title="Don't Look!">
+                        <img src="https://i.ytimg.com/vi/Iba133nFobA/hqdefault.jpg" alt="Don't Look!" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_dont_look_title">Don't Look! 👀</h4>
+                        <p class="video-desc" data-i18n="short_dont_look_desc">Playful comedic couple timing starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/Iba133nFobA" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- EVERY. SINGLE. TIME. (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="zhivE5YGNyI" data-title="EVERY. SINGLE. TIME.">
+                        <img src="https://i.ytimg.com/vi/zhivE5YGNyI/hqdefault.jpg" alt="EVERY. SINGLE. TIME." loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_every_time_title">EVERY. SINGLE. TIME. 🤦‍♂️</h4>
+                        <p class="video-desc" data-i18n="short_every_time_desc">Relatable everyday moments starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/zhivE5YGNyI" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- When She Says "I'm Stuck in Traffic" (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="xKtCuwU59do" data-title="When She Says 'I'm Stuck in Traffic'">
+                        <img src="https://i.ytimg.com/vi/xKtCuwU59do/hqdefault.jpg" alt="When She Says I'm Stuck in Traffic" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_traffic_title">When She Says "I'm Stuck in Traffic" 💅</h4>
+                        <p class="video-desc" data-i18n="short_traffic_desc">Comedy short starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/xKtCuwU59do" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- Went In For Paper Towels… (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="TPk9n_FJwlE" data-title="Went In For Paper Towels…">
+                        <img src="https://i.ytimg.com/vi/TPk9n_FJwlE/hqdefault.jpg" alt="Went In For Paper Towels…" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_paper_towels_title">Went In For Paper Towels… 🛒</h4>
+                        <p class="video-desc" data-i18n="short_paper_towels_desc">Shopping trip realities with Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/TPk9n_FJwlE" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- I'm Not Picky! (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="HGPD_L_16G8" data-title="I'm Not Picky!">
+                        <img src="https://i.ytimg.com/vi/HGPD_L_16G8/hqdefault.jpg" alt="I'm Not Picky!" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_not_picky_title">I'm Not Picky! 😇</h4>
+                        <p class="video-desc" data-i18n="short_not_picky_desc">Deciding what to eat comedy sketch by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/HGPD_L_16G8" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
+                    </div>
+                </article>
+
+                <!-- When You Wake Up With a Black Eye… (Lumukai) -->
+                <article class="short-card" data-channel="lumukai">
+                    <div class="short-facade" data-video-id="-7URoK_xqPg" data-title="When You Wake Up With a Black Eye…">
+                        <img src="https://i.ytimg.com/vi/-7URoK_xqPg/hqdefault.jpg" alt="When You Wake Up With a Black Eye…" loading="lazy" class="facade-thumb">
+                        <button class="facade-play-btn" aria-label="Play Short"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></button>
+                        <span class="short-badge" data-i18n="short_badge">Short</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-channel-tag official">Lumukai</span>
+                        </div>
+                        <h4 class="video-title" data-i18n="short_black_eye_title">When You Wake Up With a Black Eye… 👁️</h4>
+                        <p class="video-desc" data-i18n="short_black_eye_desc">Sleeping mishaps comedy short starring Mia & Leo by Lumukai.</p>
+                        <a href="https://www.youtube.com/shorts/-7URoK_xqPg" target="_blank" rel="noopener noreferrer" class="card-yt-link" data-i18n="watch_on_youtube">Watch on YouTube ↗</a>
                     </div>
                 </article>
             </div>
@@ -541,7 +1001,14 @@
     <footer class="footer">
         <div class="social-links">
             <a href="https://www.youtube.com/@lumukaiofficial" class="social-icon" target="_blank"
-                rel="noopener noreferrer" aria-label="YouTube">
+                rel="noopener noreferrer" aria-label="YouTube (@lumukaiofficial)" title="Lumukai (@lumukaiofficial)">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@lumukaiproject" class="social-icon yt-project" target="_blank"
+                rel="noopener noreferrer" aria-label="YouTube (@lumukaiproject)" title="Lumukai Project (@lumukaiproject)">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
